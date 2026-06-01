@@ -5,7 +5,7 @@
     --accent: #00274c;
     --accent-soft: #e8eef5;
     --rule: #e1e4e8;
-    --max-width: 960px;
+    --max-width: 1000px;
     --nav-height: 56px;
 }
 
@@ -55,15 +55,8 @@ a:hover {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
-}
-
-.nav-brand {
-    font-weight: 600;
-    font-size: 1.05rem;
-    color: var(--text);
-    border: none;
 }
 
 .site-nav nav ul {
@@ -145,23 +138,25 @@ h3 {
 
 .tagline {
     color: var(--muted);
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin: 0 0 1rem;
 }
 
 .hero-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .hero-links a {
     display: inline-block;
+    width: 13rem;
     padding: 0.4rem 0.9rem;
     background: var(--accent-soft);
     border: 1px solid transparent;
     border-radius: 6px;
     font-size: 0.95rem;
+    text-align: center;
 }
 
 .hero-links a:hover {
