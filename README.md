@@ -15,9 +15,9 @@ assets/
   favicon-192.png
   apple-touch-icon.png
   headshot_photos/         # profile photos
-    TongSuo_headshot_2021Aug.jpg
+    TongSuo_headshot_latest.jpg
   cv/                      # CV PDFs
-    TongSuo_cv_20260420.pdf
+    TongSuo_cv_latest.pdf
   papers/                  # publications (PDFs / preprints)
   logo_design_images/      # source images for the favicon / branding
     doing-my-best-hamster.jpg
@@ -25,17 +25,18 @@ assets/
 
 ## Updating the CV
 
-Drop the new CV PDF into `assets/cv/` (filenames are dated, e.g.
-`TongSuo_cv_YYYYMMDD.pdf`, so older versions are preserved). Then update the
-`href` in `index.html` (search for `cv/TongSuo_cv_`) to point at the new file
-and push.
+The live site always links to `assets/cv/TongSuo_cv_latest.pdf`. To update:
+
+1. (Optional, to keep an archive) Rename the existing `TongSuo_cv_latest.pdf`
+   to something dated like `TongSuo_cv_20260420.pdf`.
+2. Save the new version as `TongSuo_cv_latest.pdf`.
+3. Commit and push. No HTML changes needed.
 
 ## Updating the headshot
 
-Drop the new photo into `assets/headshot_photos/` (filenames are dated, e.g.
-`TongSuo_headshot_YYYYMon.jpg`). Then update the `src` in `index.html`
-(search for `headshot_photos/TongSuo_headshot_`) to point at the new file
-and push.
+The live site always loads `assets/headshot_photos/TongSuo_headshot_latest.jpg`.
+Same pattern as CV — optionally archive the old one with a dated filename,
+then drop the new photo in as `TongSuo_headshot_latest.jpg` and push.
 
 ## Regenerating the favicon
 
