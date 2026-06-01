@@ -15,9 +15,9 @@ assets/
   favicon-192.png
   apple-touch-icon.png
   headshot_photos/         # profile photos
-    headshot.jpg
+    TongSuo_headshot_2021Aug.jpg
   cv/                      # CV PDFs
-    Tong_Suo_CV.pdf
+    TongSuo_cv_20260420.pdf
   papers/                  # publications (PDFs / preprints)
   logo_design_images/      # source images for the favicon / branding
     doing-my-best-hamster.jpg
@@ -25,11 +25,17 @@ assets/
 
 ## Updating the CV
 
-Replace `assets/cv/Tong_Suo_CV.pdf` with the new PDF (keep the same filename) and push.
+Drop the new CV PDF into `assets/cv/` (filenames are dated, e.g.
+`TongSuo_cv_YYYYMMDD.pdf`, so older versions are preserved). Then update the
+`href` in `index.html` (search for `cv/TongSuo_cv_`) to point at the new file
+and push.
 
 ## Updating the headshot
 
-Replace `assets/headshot_photos/headshot.jpg` (keep the same filename) and push.
+Drop the new photo into `assets/headshot_photos/` (filenames are dated, e.g.
+`TongSuo_headshot_YYYYMon.jpg`). Then update the `src` in `index.html`
+(search for `headshot_photos/TongSuo_headshot_`) to point at the new file
+and push.
 
 ## Regenerating the favicon
 
