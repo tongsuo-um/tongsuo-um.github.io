@@ -149,7 +149,13 @@ h3 {
     margin: 0 0 1rem;
 }
 
-.cv-link a {
+.hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.hero-links a {
     display: inline-block;
     padding: 0.4rem 0.9rem;
     background: var(--accent-soft);
@@ -158,7 +164,7 @@ h3 {
     font-size: 0.95rem;
 }
 
-.cv-link a:hover {
+.hero-links a:hover {
     border-color: var(--accent);
 }
 
