@@ -11,16 +11,14 @@ index.html
 style.css
 make_favicon.py            # regenerates the favicon from the source hamster image
 assets/
-  favicon.ico              # site favicon (referenced from index.html)
-  favicon-192.png
-  apple-touch-icon.png
   headshot_photos/         # profile photos
     TongSuo_headshot_latest.jpg
   cv/                      # CV PDFs
     TongSuo_cv_latest.pdf
   papers/                  # publications (PDFs / preprints)
-  logo_design_images/      # source images for the favicon / branding
-    doing-my-best-hamster.jpg
+  logo_design_images/      # branding / favicon
+    doing-my-best-hamster.jpg   # source image for the favicon
+    hamster_tab_logo.ico        # browser-tab favicon (referenced from index.html)
 ```
 
 ## Updating the CV
@@ -41,5 +39,4 @@ then drop the new photo in as `TongSuo_headshot_latest.jpg` and push.
 ## Regenerating the favicon
 
 If you swap the source image at `assets/logo_design_images/doing-my-best-hamster.jpg`,
-re-run `python make_favicon.py` to refresh `favicon.ico`, `favicon-192.png`, and
-`apple-touch-icon.png`.
+re-run `python make_favicon.py` to refresh `assets/logo_design_images/hamster_tab_logo.ico`.
