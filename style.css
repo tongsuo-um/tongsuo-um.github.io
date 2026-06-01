@@ -5,7 +5,7 @@
     --accent: #00274c;
     --accent-soft: #e8eef5;
     --rule: #e1e4e8;
-    --max-width: 880px;
+    --max-width: 960px;
     --nav-height: 56px;
 }
 
@@ -124,7 +124,7 @@ h3 {
 .hero-inner {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
@@ -145,15 +145,14 @@ h3 {
 
 .tagline {
     color: var(--muted);
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     margin: 0 0 1rem;
 }
 
 .hero-links {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .hero-links a {
