@@ -2,7 +2,7 @@
 from PIL import Image, ImageDraw
 import os
 
-SRC = os.path.join(os.path.dirname(__file__), "assets", "doing-my-best-hamster.jpg")
+SRC = os.path.join(os.path.dirname(__file__), "assets", "logo_design_images", "doing-my-best-hamster.jpg")
 OUT_DIR = os.path.join(os.path.dirname(__file__), "assets")
 
 img = Image.open(SRC).convert("RGBA")
@@ -37,7 +37,6 @@ masked = Image.new("RGBA", (size, size), (0, 0, 0, 0))
 masked.paste(square, (0, 0), mask)
 
 large = masked.resize((512, 512), Image.LANCZOS)
-large.save(os.path.join(OUT_DIR, "favicon-512.png"))
 masked.resize((192, 192), Image.LANCZOS).save(os.path.join(OUT_DIR, "favicon-192.png"))
 masked.resize((180, 180), Image.LANCZOS).save(os.path.join(OUT_DIR, "apple-touch-icon.png"))
 
@@ -49,4 +48,4 @@ large.save(
 )
 
 print(f"Cropped square: {size}x{size}")
-print(f"Wrote favicon.ico (sizes {ico_sizes}), favicon-192.png, favicon-512.png, apple-touch-icon.png")
+print(f"Wrote favicon.ico (sizes {ico_sizes}), favicon-192.png, apple-touch-icon.png")
