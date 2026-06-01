@@ -44,6 +44,12 @@ large.save(
     format="ICO",
     sizes=ico_sizes,
 )
+masked.resize((192, 192), Image.LANCZOS).save(
+    os.path.join(OUT_DIR, "hamster_android_192.png")
+)
+masked.resize((180, 180), Image.LANCZOS).save(
+    os.path.join(OUT_DIR, "hamster_apple_touch_180.png")
+)
 
 print(f"Cropped square: {size}x{size}")
-print(f"Wrote hamster_tab_logo.ico (sizes {ico_sizes})")
+print(f"Wrote hamster_tab_logo.ico (sizes {ico_sizes}), hamster_android_192.png, hamster_apple_touch_180.png")
